@@ -8,7 +8,7 @@ pipeline {
   }
   stages {
     stage('Build') {
-      cteps {
+      steps {
         sh 'docker build -t rubymdc/jenkins-nginx-rc:devsecops-web .'
       }
     }
